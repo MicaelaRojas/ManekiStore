@@ -1,0 +1,36 @@
+body{
+    background-image: url(../assets/img/background.jpg);   
+}
+
+.card { 
+    float: none;
+    margin-bottom: 10px; 
+}
+
+
+.ubicanos{
+    text-decoration: ;
+}
+
+.registro{
+    font-family: verdana;
+    font-size: 19px;
+    text-align: center;
+    background-color: lightpink;   
+}
+
+.registro2{
+    font-family: verdana;
+    font-size: 16px;
+    text-align: center;
+    background-color: lightpink;    
+}
+
+.descripcion{
+    font-family: verdana;
+    font-size: 15px;    
+}
+
+
+
+

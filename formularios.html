@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <title>Maneki Store</title>
+</head>
+<body>
+  <!-- NAVEGADOR -->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/brand.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Maneki Store
+    </a>            
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./comida.html">Comida</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./articulos.html">Artículos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./ropa.html">Ropa</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="./nuestrasRedes.html">
+            Contáctanos
+          </a>
+        </li>   
+        <li class="nav-item active">
+          <a class="nav-link " href="./formularios.html">
+            Trabaja con nosotros
+          </a>
+        </li>    
+      </ul>
+      
+    </div>
+  </nav>
+  </nav>
+  
+ <!--  FIN NAVEGADOR -->
+ 
+ <!-- FORMULARIO  -->
+ <div class="card-deck" >
+  <div class="card body-dark mb-3" style="max-width: 30rem; height: 695px;" >
+    <strong><div class="card-header">Trabaja con nosotros</div></strong>
+    <div class="card-body text-dark">
+      <ul class="list-unstyled">
+        <li class="media">
+          <div id="header">
+            <div id="cuerpo">
+                <div id="formulario">
+                    <form action="" name="formRegistro">
+                        <table border="0" >
+                            <tr>
+                              <td colspan="2" class="registro">Para trabajar con nosotros rellene el formulario: </td>
+                            </tr>
+                            <tr><td><br></td></tr>
+                            <tr>
+                                <td class="descripcion">DNI: </td>
+                                <td class="descripcion">
+                                    <input  type="number" max="11" name="ruc" class="form-control" id="exampleFormControlInput2" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="descripcion">Nombre: </td>
+                                <td class="descripcion">
+                                    <input type="text" name="nombre" class="form-control" id="exampleFormControlInput2" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="descripcion">Apellido Paterno: </td>
+                                <td class="descripcion">
+                                    <input type="text" name="apellidoP" class="form-control" id="exampleFormControlInput2" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="descripcion">Apellido Materno: </td>
+                                <td class="descripcion">
+                                    <input  type="text" name="apellidoM" class="form-control" id="exampleFormControlInput2" required>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td class="descripcion">Correo: </td>
+                              <td class="descripcion">
+                                  <input  type="text" name="apellidoM" class="form-control" id="exampleFormControlInput2" required>
+                              </td>
+                          </tr>
+                            <tr><td><br></td></tr>
+                            <tr>
+                                <td class="descripcion">Sexo: </td>
+                                <td class="descripcion">
+                                    <input  type="radio" name="sexo" value="m"  required>Masculino
+                                    <input  type="radio" name="sexo" value="f" required>Femenino
+                                </td>
+                            </tr>
+                            <tr><td><br></td></tr>
+                            <tr>
+                                <td class="descripcion">Nivel de estudio: </td>
+                                <td class="descripcion">
+                                  <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Universitario</option>
+                                    <option>Técnico</option>
+                                    <option>No tiene</option>
+                                    
+                                  </select>
+        
+                                    </p> 
+                                </td>
+                            
+                            </tr>
+                            <tr>
+                              <td class="descripcion">Ciudad de nacimiento</td>
+                              <td class="descripcion">
+                                <select class="custom-select" id="inputGroupSelect02">
+                                  <option selected>Otro </option>
+                                  <option value="1">Lima</option>
+                                  <option value="2">Cusco</option>
+                                  <option value="3">Arequipa</option>
+                              </td>
+                            </tr>
+                            <tr><td><br></td></tr>
+                            <tr>
+                                <td class="descripcion">Curriculum</td>
+                                <td class="descripcion">
+                                    <input type="file" class="form-control-file" id="exampleFormControlFile1" accept=".pdf,.doc" >
+                            </td>
+                            </tr>
+                            <tr><td><br></td></tr>
+                            <tr><td><br></td></tr>
+                            <tr>
+                                <td colspan="2" class="registro2">
+                                   <input type="submit" name="registrar" value="Enviar" onclick="Validar();"> 
+                                </td>  
+                            </tr> 
+                               
+                        </table>
+                        <script>
+                            function Validar() {
+                                var c1 = document.getElementById('ch1').checked;
+                                var c2 = document.getElementById('ch2').checked;
+                                var c3 = document.getElementById('ch3').checked;
+                                
+                                var suma= c1 + c2 +c3 
+        
+                                if (suma>1 == true || suma==0 ==true) {
+                                suma = 'Por favor seleccione UNA casilla <br>';
+                                }else{
+                                suma = 'Gracias por seleccionar solo una casila <br>';
+                                }
+                                document.getElementById('mensaje').innerHTML = suma;
+                                }
+                        </script>
+                    </form>
+                </div>
+            </div>
+            </div>
+          </div>
+        </li>
+  </div>
+  <div class="card border-dark mb-3" style="margin-left: auto; max-width: 30rem; height: 686px;" >
+    <strong><div class="card-header">Danos tu opinión</div></strong>
+    <div class="card-body text-dark">
+      <ul class="list-unstyled">
+        <li class="media">
+          <div id="header">
+            <div id="cuerpo">
+                <div id="formulario">
+                    <form action="" name="formRegistro">
+                      <table border="0" >
+                        <tr>
+                          <td colspan="2" class="registro">Para enviar un comentario rellene el formulario: </td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                        <tr>
+                            <td class="descripcion">Nombre: </td>
+                            <td class="descripcion">
+                              <input type="text" class="form-control" id="exampleFormControlInput2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="descripcion">Apellido Paterno: </td>
+                            <td class="descripcion">
+                              <input type="text" class="form-control" id="exampleFormControlInput1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="descripcion">Apellido Materno: </td>
+                            <td class="descripcion">
+                              <input type="text" class="form-control" id="exampleFormControlInput1">
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="descripcion">Email </td>
+                          <td class="descripcion">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          </td>
+                      </tr>
+                        <tr><td><br></td></tr>
+                            <td class="descripcion">Ciudad de nacimiento</td>
+                            <td class="descripcion">
+                              <select class="custom-select" id="inputGroupSelect02">
+                                <option selected>Otro </option>
+                                <option value="1">Lima</option>
+                                <option value="2">Cusco</option>
+                                <option value="3">Arequipa</option>
+                            </td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                        <tr><td><br></td></tr>
+                        <tr>
+                          <td class="descripcion">Comentario </td>
+                          <td class="descripcion">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                          </td>
+                      </tr>
+                      <tr><td><br></td></tr>
+                      <tr>
+                        <td colspan="2" class="registro2">
+                           <input type="submit" name="registrar" value="Enviar" onclick="Validar();"> 
+                        </td>  
+                    </tr>     
+                    </table>
+                          
+                  
+
+<!-- FIN FORMULARIO-->
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+</body>
+</html>
